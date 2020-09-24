@@ -211,15 +211,23 @@ dt-article figcaption b {
 </dt-byline>
  
   
-<link type="text/css" href="https://cdn.jotfor.ms/before-after/before-after.css" rel="stylesheet">
-<div class="ba-slider">
+<div class='baSlider'>
+    <div class='frame'>
+        <div baSlider-handler><img src="images/drag.svg" alt=""></div>
+        <div class='before'>
    <img src="assets/img/raw.png">
-   <div class="resize">
+   </div>  
+        <div class='after'>
+            <div>
        <img src="assets/img/lsds.png">
-   </div>
-   <span class="handle"></span>
+    </div>
+        </div>  
+    </div>
 </div>
- 
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="src/jquery.baSlider.csss">
+<script src="src/jquery.baSlider.js"></script>
+  $('.baSlider').baSlider();
 
   
 <h2>Abstract</h2>
