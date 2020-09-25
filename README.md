@@ -1,39 +1,34 @@
-# Weight Agnostic Neural Networks
+# before-after.js
 
-This repo contains the source for the article.
+### A simple and responsive image comparison slider 
 
-### If all you want to do is view the page locally
+Comparison sliders are nothing new. There are even pure CSS implementations that is nothing but short of amazing. However, I wasn’t able to find a truly responsive one that was simple enough for our needs. This gave me the chance (and excuse) to build one myself that can be used anywhere.
 
-Run `python -m http.server` to serve on the base directory to view `index.html` in a local browser.
+The [Medium article](https://medium.com/jotform-form-builder/making-a-responsive-image-comparison-slider-in-css-and-javascript-f3a691a9dd71) details each decision made along the way.
 
-### Article
+#### DEMO
 
-`draft.md` - main text of the article, in markdown.
+- [Landing page usage](http://jotform.com/formscentral)  
+- [Codepen Demo](http://codepen.io/bamf/pen/jEpxOX)
 
-`draft_appendix.md` - appendix, in markdown.
+![Image comparison](https://d262ilb51hltx0.cloudfront.net/max/800/1*N43g_K5grRctYcudDi3gLQ.gif)
 
-`draft_bib.html` - the citations.
 
-`draft_header.html` - start of the document
+#### UPDATES
+- Performance improvements (Feb, 2017)
+- before-after is now a jquery plugin, special thanks to [@ramblex](http://github.com/ramblex/). Also CDN links updated and fixed a few issues.(Feb, 2016)
+- I was finally able to remove the jQuery Mobile dependency and handle it with native events. If you wish to help, mobile testing is much appreciated since I can only test a limited number devices. (March, 2015)
 
-`index.html` - generated, don't edit this file.
+#### DEPENDENCIES
+- [jQuery](http://jquery.com) for ease
 
-### Instructions to Build and Test
-```bash
-git clone https://github.com/weightagnostic/weightagnostic.github.io.git
-cd weightagnostic.github.io
-npm install
-```
+#### USAGE
+    $('.ba-slider').beforeAfter();
+    
+Or you can simply copy the contents of the sample.html to your own page. All links are called from a CDN.
 
-Modify text by editing `draft.md` -- this is where all of the content exists.
 
-Appendix content goes in `draft_appendix.md`. Add bib entries to `draft_bib.html`.
+#### LICENSE
 
-Run `./bin/make` to build document into `index.html` (which are identical).
-Run `python -m http.server` to serve on the base directory to view `index.html` in a local browser for debugging.
-
-To watch all markdown files for changes and then compile them, you can run the following
-```
-brew install fswatch
-./bin/watch
-```
+The MIT License (MIT)
+Copyright (c) 2015 JotForm
