@@ -1,0 +1,14 @@
+<html>
+<body>
+<script src="mobile-detect.js"></script>
+<script>
+var md = new MobileDetect(window.navigator.userAgent);
+if (md.is('mobile')){
+document.getElementById("img").src="ng.JPG";
+}
+else{
+document.getElementById("img").src="raw.png";
+}
+  </script>
+  </body>
+</html>
