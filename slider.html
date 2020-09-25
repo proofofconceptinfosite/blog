@@ -11,7 +11,10 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="https://cdn.jotfor.ms/before-after/before-after.min.js"></script>
 <script type="text/javascript">
-  $('.ba-slider').beforeAfter();
+  $('.ba-slider > img:first').on('load', function() {
+      var width_first_image = $('.ba-slider > img:first').width() + 'px';
+      cur.find('.resize img').css('width', width_first_image);
+    });
 </script>
 </body>
 </html>
