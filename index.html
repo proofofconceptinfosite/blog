@@ -211,6 +211,23 @@ dt-article figcaption b {
 </dt-byline>
 </dt-byline>
   
+<link type="text/css" href="https://cdn.jotfor.ms/before-after/before-after.min.css" rel="stylesheet">
+
+<div class="ba-slider">
+   <img src="http://i.imgur.com/BIHN8KQ.jpg">
+   <div class="resize">
+       <img src="http://i.imgur.com/nS6dvpq.jpg">
+   </div>
+   <span class="handle"></span>
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="before-after.min.js"></script>
+<!-- CDN link if you prefer to use this one -->
+<!-- <script type="text/javascript" src="https://cdn.jotfor.ms/before-after/before-after.min.js"></script> -->
+<script type="text/javascript">
+  $('.ba-slider').beforeAfter();
+</script>
   
 <h2>Abstract</h2>
 <p>Not all neural network architectures are created equal, some perform much better than others for certain tasks. But how important are the weight parameters of a neural network compared to its architecture? In this work, we question to what extent neural network architectures alone, without learning any weight parameters, can encode solutions for a given task. We propose a search method for neural network architectures that can already perform a task without any explicit weight training. To evaluate these networks, we populate the connections with a single shared weight parameter sampled from a uniform random distribution, and measure the expected performance. We demonstrate that our method can find minimal neural network architectures that can perform several reinforcement learning tasks without weight training. On supervised learning domain, we find architectures that can achieve much higher than chance accuracy on MNIST using random weights.</p>
