@@ -1,0 +1,16 @@
+<html>
+<body>
+<script src="mobile-detect.js"></script>
+<script>
+var md = new MobileDetect(window.navigator.userAgent);
+if (md.is('iPhone')){
+console.log('iphone') ;
+document.write("iphone");
+}
+else{
+console.log('not iphone');
+document.write("not iphone");
+}
+  </script>
+  </body>
+</html>
