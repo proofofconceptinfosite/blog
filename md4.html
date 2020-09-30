@@ -1,0 +1,19 @@
+
+
+
+<html>
+<body>
+<script src="mobile-detect.js"></script>
+<script>
+var md = new MobileDetect(window.navigator.userAgent);
+if (md.is('iPhone')){
+    $(document).ready(function() {
+        var myImg = $(".myImg");
+        var newImg = "lsds.png.gif";
+        myImg.attr('src', newImg);
+    });
+}
+</script>
+<img class="myImg" src="raw.png" width="107" height="98">
+</body>
+</html>
