@@ -1,12 +1,13 @@
 <html>
 <body>
     <img class="myimage" src="lsds.png" width="107" height="98">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="mobile-detect.js"></script>
 <script>
 var md = new MobileDetect(window.navigator.userAgent);
 if (md.is('iPhone')){
     document.write("iphone");
-    document.getElementById('myimage').style.display = 'none';
+    $('#myimage').hide();
     });
 }
 </script>
