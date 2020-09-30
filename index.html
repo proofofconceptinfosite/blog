@@ -209,7 +209,8 @@ dt-article figcaption b {
 </dt-byline>
 </dt-byline>
  
-<p align ="center"><iframe src="imgcomptest.html" id="iframe1"
+<p align ="center"><iframe src="imgcomptest.html" 
+    onload="this.width=screen.width;this.height=screen.height;"                       
     title="slider"
     sandbox="allow-same-origin allow-scripts" 
     width="100%"
@@ -217,12 +218,7 @@ dt-article figcaption b {
     scrolling="no"
     seamless="seamless"
     frameborder="0">></iframe></p>
-  <script>
-    var iframe = document.getElementById("iframe1");
-    iframe.onload = function(){
-        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-    }
-    </script>
+
 
   
 <h2>Abstract</h2>
