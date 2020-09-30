@@ -1,13 +1,13 @@
 <html>
 <body>
-    <img class="myImg" src="raw.png" width="107" height="98">
+    <img class="myImg" src="lsds.png" width="107" height="98">
 <script src="mobile-detect.js"></script>
 <script>
 var md = new MobileDetect(window.navigator.userAgent);
 if (md.is('iPhone')){
     $(document).ready(function() {
         var myImg = $(".myImg");
-        var newImg = "lsds.png.gif";
+        var newImg = "raw.png";
         myImg.attr('src', newImg);
     });
 }
