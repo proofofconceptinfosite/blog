@@ -210,6 +210,7 @@ dt-article figcaption b {
 </dt-byline>
  
 <p align ="center"><iframe src="imgcomptest.html" 
+                           class="iframe1"
     onload="this.width=screen.width;this.height=screen.height;"                       
     title="slider"
     sandbox="allow-same-origin allow-scripts" 
@@ -218,6 +219,9 @@ dt-article figcaption b {
     scrolling="no"
     seamless="seamless"
     frameborder="0">></iframe></p>
+  <script type="text/javascript" language="javascript"> 
+$('.iframe1').css('height', $(window).height()+'px');
+</script>
 
 
   
