@@ -210,8 +210,28 @@ dt-article figcaption b {
 </dt-byline>
 </dt-byline>
  
-<p align ="center"><iframe src="imgcomptest.html" 
-                           class="iframe1"
+  
+  .iframe-container {
+  overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  position: relative;
+}
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+<div class="iframe-container">
+  <iframe src="imgcomptest.html" allowfullscreen></iframe>
+</div> 
+  
+<p align ="center">
+  <iframe src="imgcomptest.html" 
+    class="iframe1"
     onload="this.width=screen.width;this.height=screen.height;"                       
     title="slider"
     sandbox="allow-same-origin allow-scripts" 
